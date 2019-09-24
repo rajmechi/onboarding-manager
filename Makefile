@@ -2,7 +2,7 @@
 # Image URL to use all building/pushing image targets
 REGISTRY ?= quay.io
 PROJECT_NAME ?= onboarding-manager
-REPOSITORY_NAME ?= redhat-cop/$(PROJECT_NAME)
+REPOSITORY_NAME ?= rajmechi/$(PROJECT_NAME)
 REPOSITORY ?= $(REGISTRY)/$(REPOSITORY_NAME)
 
 IMG := $(REPOSITORY):latest

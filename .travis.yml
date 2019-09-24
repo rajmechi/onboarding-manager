@@ -1,6 +1,6 @@
 sudo: required
 language: go
-go_import_path: github.com/redhat-cop/onboarding-manager
+go_import_path: github.com/rajmechi/onboarding-manager
 go:
 - "1.12"
 env:
@@ -14,13 +14,13 @@ deploy:
     skip_cleanup: true
     script: make travis-latest-deploy
     on:
-      repo: redhat-cop/onboarding-manager
+      repo: rajmechi/onboarding-manager
       branch: master
       tags: false
   - provider: script
     skip_cleanup: true
     script: make travis-release-deploy
     on:
-      repo: redhat-cop/onboarding-manager
+      repo: rajmechi/onboarding-manager
       branch: master
       tags: true
